@@ -1,6 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
+//Hola he afegit el comentari
 public class Videojoc {
     private String nom;
     private String genere;
