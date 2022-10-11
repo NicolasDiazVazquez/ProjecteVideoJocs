@@ -1,21 +1,12 @@
-import java.time.LocalDate;
-
 public class Usuari {
-    private final int id;
-    private static int ultimId = 0;
+    private String nomDelUsuari;
+	//L'Eloy pensa que el Monkey Island està infravalorat
 
-    private String nickname;
-    private String nom;
-    private String cognoms;
-    private String correu;
-    private LocalDate dataNaixement;
-    public Usuari(String nickname) {
-        this.nickname = nickname;
-        ultimId++;
-        this.id = ultimId;
+    public Usuari(String nomUsuari) {
+        this.nomDelUsuari = nomUsuari;
     }
 
-    public String getIdentificador() {
-        return nickname+"#"+String.format("%04d", id);
+    public String getNomDelUsuari() {
+        return nomDelUsuari;
     }
 }
