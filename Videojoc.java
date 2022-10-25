@@ -14,6 +14,8 @@ public class Videojoc {
 
     private Set<Usuari> usuarisQueHanConsultat;
 
+    private Set<Comentari> comentaris;
+
     public Set<Usuari> getUsuarisQueHanConsultat() {
         return usuarisQueHanConsultat;
     }
@@ -21,6 +23,7 @@ public class Videojoc {
     public Videojoc(String nom) {
         this.nom = nom;
         usuarisQueHanConsultat = new HashSet<>();
+        comentaris = new HashSet<>();
     }
 
     public String getNom() {
@@ -112,5 +115,13 @@ public class Videojoc {
 
     public void afegirUsuariQueConsulta(Usuari usuari) {
         usuarisQueHanConsultat.add(usuari);
+    }
+
+    public void afegirComentari(Comentari comentari) {
+        comentaris.add(comentari);
+    }
+
+    public Set<Comentari> getComentaris() {
+        return comentaris;
     }
 }
